@@ -3,7 +3,9 @@ Ansible playbooks for use with Ansible Tower
 
 Ansible playbooks
 
+http://www.geedew.com/2014/02/15/working-with-ansible/
 
+http://www.hiddentao.com/archives/2014/06/03/shippable-ansible-docker-loggly-for-awesome-deployments/
 
 
 

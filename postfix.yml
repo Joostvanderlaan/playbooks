@@ -1,0 +1,4 @@
+- name: Install Postfix
+  gather_facts: no
+  roles:
+    - geerlingguy.postfix

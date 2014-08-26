@@ -1,0 +1,28 @@
+- name: Set hostname
+  hosts: live
+  gather_facts: no
+  roles:
+    - Ansibles.hostname
+ 
+ 
+- name: Install pycurl
+  gather_facts: no
+  tasks:
+    - name: Install pycurl
+      apt: pkg=python-pycurl update_cache=yes cache_valid_time=600
+ 
+ 
+- name: Install Docker
+  roles:
+    - angstwad.docker_ubuntu
+ 
+ 
+- name: Install Postfix
+  gather_facts: no
+  roles:
+    - geerlingguy.postfix
+ 
+ 
+- name: Install Phusion Passenger NGINX
+  roles:
+    - abtris.nginx-passenger
