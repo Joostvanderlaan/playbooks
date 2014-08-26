@@ -4,6 +4,9 @@
   remote_user: vagrant
   tasks:
     - include: nodejs.yml
+ 
     - include: docker.yml
+ 
 	- include: postfix.yml
+ 
 	- include: phusion-passenger-nginx.yml
